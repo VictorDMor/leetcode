@@ -20,12 +20,14 @@ Constraints:
 
 1 <= temperatures.length <= 105
 30 <= temperatures[i] <= 100
+
+PASSES BUT IT IS NOT TIME EFFICIENT
 '''
 
 temperatures = [73,74,75,71,69,72,76,73]
 
 class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    def dailyTemperatures(self, temperatures):
         temp_arr_size = len(temperatures)
         warmer_days = [0] * temp_arr_size
         for i in range(0, temp_arr_size):
