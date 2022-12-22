@@ -51,9 +51,7 @@ class Solution:
             if veganFriendly == 1:
                 if restaurant[2] != veganFriendly:
                     candidate = False
-            if restaurant[3] > maxPrice and candidate:
-                candidate = False
-            if restaurant[4] > maxDistance and candidate:
+            if (restaurant[3] > maxPrice or restaurant[4] > maxDistance) and candidate:
                 candidate = False
             if candidate:
                 filtered_restaurants.append(restaurant)
