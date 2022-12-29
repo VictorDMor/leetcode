@@ -1,8 +1,4 @@
-import random
-import time
+from queue import PriorityQueue
 
-k = 98001
-
-while k > 0:
-    print(k)
-    k -= 1
+q = PriorityQueue(100)
+print(q.empty())

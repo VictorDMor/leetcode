@@ -39,13 +39,19 @@ Constraints:
 1 <= piles[i] <= 10**4
 1 <= k <= 10**5
 '''
+import queue
 class Solution:
-    def minStoneSum(self, piles: List[int], k: int) -> int:
-        while k > 0:
-            piles = sorted(piles, reverse=True)
-            piles[0] -= int(piles[0]/2)
-            k -= 1
-        return sum(piles)
+    def minStoneSum(self, piles):
+        q = queue.PriorityQueue(len(piles))
+        removed = 0
+        for n in piles:
+            q.put(n*-1)
+        for _ in range(k):
+            max_pile = q.get()*-1
+            floored = int(max_pile/2)
+            removed += floored
+            q.put((max_pile-floored)*-1)
+        return sum(piles) - removed
 
 print(Solution().minStoneSum([5,4,9], 2))
 print(Solution().minStoneSum([4,3,6,7], 3))
