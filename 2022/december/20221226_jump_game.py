@@ -29,13 +29,6 @@ class Solution:
         i = 0
         course = []
         while i < nums_length:
-            print(nums[0])
-            # print(f'''
-            #     i: {i}
-            #     course: {course}
-            #     nums[i]: {nums[i]}
-            #     nums[course[-1]]: {nums[course[-1]] if len(course) > 0 else None}
-            # ''')
             if i not in course:
                 course.append(i)
             if nums_length-1 in course:
