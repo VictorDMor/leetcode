@@ -36,3 +36,5 @@ x = 121
 y = 348
 print(Solution().isPalindrome(x))
 print(Solution().isPalindrome(y))
+print(Solution().isPalindromeWithoutConverting(x))
+print(Solution().isPalindromeWithoutConverting(y))
