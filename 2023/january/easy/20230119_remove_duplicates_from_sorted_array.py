@@ -1,4 +1,5 @@
 '''
+Note: I'm not sure if this is O(1) extra memory, I believe it is not. But it's working.
 26. Remove Duplicates from Sorted Array
 
 Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each 
