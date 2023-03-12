@@ -22,6 +22,7 @@ while the following are not valid numbers: ["abc", "1a", "1e", "e3", "99e2.5", "
 Given a string s, return true if s is a valid number.
 '''
 # This is a true Frankenstein; Brute force solution
+from collections import Counter
 class Solution:
     def isNumber(self, s: str) -> bool:
         s = s.lower()
