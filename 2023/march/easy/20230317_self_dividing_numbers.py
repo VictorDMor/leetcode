@@ -21,7 +21,7 @@ Constraints:
 1 <= left <= right <= 10**4
 '''
 class Solution:
-    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+    def selfDividingNumbers(self, left: int, right: int):
         numbers = []
         for i in range(left, right+1):
             str_i = str(i)
