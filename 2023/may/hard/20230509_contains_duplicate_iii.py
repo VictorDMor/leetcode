@@ -32,6 +32,10 @@ Constraints:
 0 <= valueDiff <= 10**9
 '''
 
+"""
+This code is not mine. It's ChatGPT's. I'm just using it to learn.
+"""
+
 from typing import List
 from sortedcontainers import SortedList # External library, use pip to install it
 
